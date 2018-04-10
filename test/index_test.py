@@ -2,8 +2,10 @@ import unittest2 as unittest
 import pdb
 from ipynb.fs.full.index import *
 
-class TestPythonFunctionss(unittest.TestCase):
+class TestPythonFunctions(unittest.TestCase):
     def test_number_of_destinations_func(self):
+        global travel_destinations = ['something']
+        pdb.set_trace()
         self.assertEqual(number_of_destinations(), len(travel_destinations))
 
     def test_next_up_func(self):
